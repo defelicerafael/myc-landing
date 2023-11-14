@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BehaviorSubject, Subject } from 'rxjs';
-
+import { IntersectionDirective } from '../../directives/intersection.directive';
 
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,IntersectionDirective],
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })

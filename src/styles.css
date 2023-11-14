@@ -11,9 +11,17 @@ body{
 }
 
 .content-grid{
+    --padding-inline: 2rem;
+    --content-max-width:160ch;
+    --breakout-max-width:85ch;
+
     display: grid;
     grid-template-columns: 
-    [full-width-start] 50px [breakout-start] 100px [content-start] 1fr [content-end] 100px [breakout-end] 50px [full-width-end];
+    [full-width-start] minmax(var(--padding-inline),1fr)
+    [breakout-start] 0px 
+    [content-start] min(100% - (var(--padding-inline) *2 ),var(--content-max-width)) [content-end] 
+    0px  [breakout-end] minmax(var(--padding-inline),1fr)
+    [full-width-end];
 }
 
 .content-grid > *{
@@ -58,7 +66,7 @@ body{
     opacity:0;
     transition:all 1s;
     filter:blur(5px);
-    transform:translateY(25%)
+    transform:translateY(8%)
 }
 .show{
     opacity:1;
@@ -148,5 +156,9 @@ img{
     }
     .flex-4 div{
         width:90%
+    }
+    .content-grid{
+        --padding-inline: 1rem;
+       
     }
 }

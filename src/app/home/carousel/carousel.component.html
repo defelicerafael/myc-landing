@@ -1,4 +1,4 @@
-<div class="slider">
+<div class="slider hidden" appIntersectionObserver [threshold]="0">
     <div [ngClass]="(val === 'izq') ? 'carousel' : 'carousel-r'">
         <div class="carousel-item"   *ngFor="let img of carouselImgs; index as i" [ngClass]="(val === 'izq') ? 'slideLeft' : 'slideRigth'">
             <div class="mascara"   style="--orden:{{i}}" >
