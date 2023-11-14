@@ -1,3 +1,11 @@
+section{
+    background-image: url(../../../assets/img/MYC_logo_white.webp);
+    background-repeat: no-repeat;
+    background-position: top left;
+    
+}
+
+
 .dividoEnDos{
     display: flex;
     justify-content: center;
