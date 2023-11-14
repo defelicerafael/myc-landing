@@ -1,7 +1,3 @@
-section{
-    padding: 4rem 2rem;
-}
-
 .dividoEnDos{
     display: flex;
     justify-content: center;
@@ -40,27 +36,7 @@ h3{
     line-height: 1.1;
 }
 
-.btn-contactanos{
-    border-radius: 8px;
-    background-color: transparent;
-    border: #A0D3CA 1px solid;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 1rem;
 
-}
-
-.btn-contactanos:hover{
-    border-radius: 8px;
-    background-color: #A0D3CA;
-    border: #A0D3CA 1px solid;
-    color: #120914;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 1rem;
-
-}
 
 
 @media only screen and (max-width: 764px){
