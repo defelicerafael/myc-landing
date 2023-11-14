@@ -1,0 +1,113 @@
+.slider{
+    overflow: hidden;
+    
+}
+.carousel{
+    width: 300%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+.carousel-r{
+    width: 300%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+}
+.mascara{
+    width: 100%;
+    background-color: #A0D3CA;
+    border-radius: 12px;
+}
+.carousel-item{
+    margin: 0 auto;
+    width: 100%;
+    padding: 1rem 8rem;
+   
+}  
+
+.slideLeft{
+    position: relative;
+    animation-name: slideLeft;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+   /* animation-delay: 1s;*/
+
+}
+.slideRigth{
+    position: relative;
+    animation-name: slideRigth;
+    animation-duration: 1s;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+   /* animation-delay: 1s;*/
+}
+.flex-between{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 999999;
+}
+button{
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid white;
+    color: white;
+    margin: 0 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-carousel{
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    box-shadow: none !important;
+}
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat( 2, minmax(300px, 1fr) );
+    justify-content: center;
+    align-items: center;
+}
+.container-carousel{
+    padding: 2rem;
+}
+
+
+
+@keyframes slideLeft {
+    0% { transform:translateX(0%); }
+    100% { transform:translateX(-100%);}
+}
+@keyframes slideRigth {
+    0% { transform:translateX(-200%); }
+    100% { transform:translateX(-100%);}
+}
+
+@media only screen and (max-width:764px) {
+    .grid-2{
+        grid-template-columns: repeat( 1, minmax(300px, 1fr) );
+    }
+    .carousel-item{
+        padding: 1rem;
+    }  
+    .img-carousel{
+        border-top-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
+    }
+}

@@ -1,0 +1,24 @@
+@keyframes parallax{
+    0%{
+        opacity: 0;
+        transform-style: preserve-3d;
+        transform: rotateX(90deg);
+        
+    }
+    25%{
+        opacity:1;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg)
+    }
+    75%{
+        opacity:1;
+        transform-style: preserve-3d;
+        transform: rotateX(0deg);
+    }
+    100%{
+        opacity: 0;
+        transform-style: preserve-3d;
+        transform: rotateX(-90deg);
+    }
+    
+}
