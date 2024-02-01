@@ -1,15 +1,28 @@
 section{
     padding: 4rem 2rem;
+    
 }
 
 .row-2{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
     justify-content: center;
     align-items: center;
     text-align: center;
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+    perspective: 1000px;
+}
+
+.perspectiva-y{
+    transform: rotateY(60deg);
+    
+}
+
+.perspectiva-y-inversa{
+    transform: rotateY(-60deg);
 }
 
 .img-uno{
@@ -18,7 +31,10 @@ section{
     object-position: 50% 50%;
     width: 100%;
     border-radius: 12px;
+    
+
 }
+
 .img-dos{
     height: 11rem;
     object-fit: cover;
@@ -48,5 +64,72 @@ section{
     object-position: 50% 50%;
     width: 100%;
     border-radius: 12px;
+    
+}
+
+p{
+    color:var(--primario);
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 3rem 3rem 0rem 3rem;
+    font-family: 'Playfair Display', serif;
+}
+
+@media only screen and (max-width:764px) {
+    .perspectiva-y{
+        transform: rotateY(0deg);
+        
+    }
+    
+    .perspectiva-y-inversa{
+        transform: rotateY(0deg);
+    }
+    .row-2{
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+    }
+    section{
+        padding: 1rem 1rem;
+    }
+    .img-uno{
+        height:15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        border-radius: 12px;
+    }
+    
+    .img-dos{
+        height:15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        border-radius: 12px;
+    }
+    .img-tres{
+        height:15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        border-radius: 12px;
+        margin-top: 1rem;
+    }
+    .img-cinco{
+        height:15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1rem; 
+    }
+    .img-seis{
+        height:15rem;
+        object-fit: cover;
+        object-position: 50% 50%;
+        width: 100%;
+        border-radius: 12px;
+        
+    }
     
 }

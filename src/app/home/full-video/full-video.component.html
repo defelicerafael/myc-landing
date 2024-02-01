@@ -1,0 +1,29 @@
+<div class="descuento-fijo">
+    <p>30% off en barcos seleccionados</p>
+</div>
+<div class="video-container">
+    <video autoplay muted loop playsinline id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source [src]="video" type="video/mp4" >
+    </video>
+    <div class="content main">
+        <div>
+            <img src="assets/img/MYC_logo_white.png" class="logo" width="682" height="364" title="logo de my yacht company">
+            <!--<img [src]="dataService.dataHeader[0].img" class="logo" width="682" height="364" title="logo de my yacht company">-->
+        </div>
+        <div class="flex-column">
+            <div>
+                <!--<h1 [innerHTML]="dataService.dataHeader[0].h1"></h1>-->
+                <h1 appIntersectionObserver [threshold]="0.5" class="hidden">My Yacht Company es líder en <span class="text-azul">alquiler de veleros, catamaranes y yates</span> para navegar en <span class="text-azul">el Caribe</span>.</h1>
+            </div>
+            <div>
+                <!--<h2 [innerHTML]="dataService.dataHeader[0].h2"></h2>-->
+                <h2 appIntersectionObserver [threshold]="0.5" class="hidden transDelay-400" >Navega por <span class="text-azul"> las Bahamas y BVI (Islas Vírgenes Británicas) </span> con las mejores flotas de barcos y al <span class="text-azul">mejor precio</span></h2>
+            </div>
+            <div class="mt-bt">
+                <button appIntersectionObserver [threshold]="0.5" class="btn-contactanos hidden transDelay-800" aria-label="Contactanos" (click)="scrolling.onClikScroll('contacto')">
+                    contactanos
+                </button>
+            </div>
+        </div>    
+    </div>
+</div>

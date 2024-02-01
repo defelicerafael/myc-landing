@@ -1,17 +1,32 @@
 <!--<router-outlet></router-outlet>-->
 <main class="content-grid">
-  <div class="breakout">
-    <app-big-text></app-big-text>
-    <app-images></app-images>
-    <app-img-text></app-img-text>
-    <app-icons></app-icons>
-    <app-carousel></app-carousel>
-    <app-contact></app-contact>
-  </div>
+    <div class="full-width">
+      <app-full-video></app-full-video>
+    </div>
+    <div class="full-width">
+      <div class="breakout">
+        <app-images></app-images>
+      </div>
+    </div>
+    <div class="full-width bg-secundario">
+        <app-img-text></app-img-text>
+    </div>
+    <div class="breakout">
+      <app-carousel></app-carousel>
+    </div>
+    <div class="full-width">
+      <app-mapa-destino></app-mapa-destino>
+    </div>
+    <div class="full-width">
+      <app-contact></app-contact>
+    </div>
+    
 </main>
 <footer>
   <div class="full-width">
+    <app-opciones-con-img></app-opciones-con-img>
     <app-footer></app-footer>
   </div>
 </footer>
+<app-bottom-whatsapp></app-bottom-whatsapp>
 

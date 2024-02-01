@@ -1,6 +1,5 @@
 .slider{
     overflow: hidden;
-    
 }
 .carousel{
     width: 300%;
@@ -26,7 +25,6 @@
     margin: 0 auto;
     width: 100%;
     padding: 1rem 8rem;
-   
 }  
 
 .slideLeft{
@@ -75,6 +73,10 @@ button{
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
     box-shadow: none !important;
+    height: 350px;
+    max-height: 350px;
+    object-fit: cover;
+    object-position:center center;
 }
 
 .grid-2{
@@ -87,7 +89,19 @@ button{
     padding: 2rem;
 }
 
+h3{
+    font-size: 2rem;
+    text-align: left;
+    color:var(--primario);
+    font-family: 'Playfair Display', serif;
+}
 
+h4{
+    font-size: 1.1rem;
+    text-align: left;
+    color:var(--primario); 
+    font-family: 'Red Hat Display', sans-serif;
+}
 
 @keyframes slideLeft {
     0% { transform:translateX(0%); }
@@ -96,6 +110,18 @@ button{
 @keyframes slideRigth {
     0% { transform:translateX(-200%); }
     100% { transform:translateX(-100%);}
+}
+
+p{
+    
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 3rem 3rem 0rem 3rem;
+    font-family: 'Playfair Display', serif;
+    max-width: 60ch;
+    text-wrap: balance;
+    margin: 0 auto;
 }
 
 @media only screen and (max-width:764px) {

@@ -2,5 +2,15 @@ h2{
     margin-top: 4rem;
     text-align: center;
     font-size: 3rem;
-    color: whitesmoke;
+    color: var(--primario);
+    font-family: 'Playfair Display', serif;
+}
+.bg-gris{
+    background-color: white;
+}
+
+@media screen and (max-width:764px) {
+    h2{
+        margin-top: 1rem;
+    }
 }

@@ -1,0 +1,99 @@
+.perspective{
+    transform-style: preserve-3d;
+    perspective-origin: 50% 50%;
+    perspective: 1000px;
+}
+
+.py-1{
+    padding: 0rem 0rem 2rem 0rem;
+}
+
+.text-icons{
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.img-fluid{
+    width: 250px;
+    height: 166px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.txt-img{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.txt-img p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1rem;
+}
+h2{
+    font-size: 2.3rem;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif;
+}
+
+a{
+    text-decoration: none;
+}
+.perspectiva-y{
+    transform: rotateY(0deg);
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+li{
+    list-style: none;
+    padding: 0.1rem 0rem;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.pe-2{
+    padding: 0rem 1rem 0rem 0rem;
+}
+
+@media only screen and (max-width:764px){
+    section{
+        padding-bottom: 1rem;
+    }
+    .img-fluid{
+        width: 100%;
+        height: auto;
+        
+    }
+    .txt-img p{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+        line-height: 1.2;
+        font-family: 'Playfair Display', serif;
+    }
+    .py-1{
+        padding: 1rem 0rem;
+    }
+    .text-icons{
+        padding: 0rem 0rem 0rem 0rem;
+        line-height: 1.5;
+    }
+}

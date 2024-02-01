@@ -1,0 +1,93 @@
+section{
+    padding: 0;
+    color: whitesmoke;
+}
+.bg-1{
+    background-image: linear-gradient(to right, var(--primario) 50%, rgba(0, 0, 0, 0.01));
+    height:100px;
+    max-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: end center;
+    position: relative;
+}
+.bg-2{
+    background-image: linear-gradient(to right, var(--secundario) 50%, rgba(0, 0, 0, 0.01));
+    height: 20vh;
+    max-height: 100px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    position: relative;
+}
+/*.bg-3{
+    background-image: linear-gradient(to right, var(--color-opcional-3) 50%, rgba(0, 0, 0, 0.01)), url('../../../assets/img/bg/ecommerce-3.png');
+    height: 20vh;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bg-6{
+    background-image: linear-gradient(to right, var(--color-opcional-2) 50%, rgba(0, 0, 0, 0.01)), url('../../../assets/img/bg/retail.png');
+    height: 20vh;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-7{
+    background-image: linear-gradient(to right, var(--color-opcional-1) 50%, rgba(0, 0, 0, 0.01)), url('../../../assets/img/bg/correo.png');
+    height: 20vh;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-4{
+    background-image: linear-gradient(to right, var(--color-secundario) 50%, rgba(0, 0, 0, 0.01)), url('https://img.freepik.com/free-photo/interior-large-distribution-warehouse-with-shelves-stacked-with-palettes-goods-ready-market_342744-1481.jpg?w=740&t=st=1667408300~exp=1667408900~hmac=1aa7ab26f000a08b7382429aa08a3c1407e9a5e350ea643563ac5b21cfdc06ec');
+    height: 20vh;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.bg-5{
+    background-image: linear-gradient(to right, var(--color-principal) 50%, rgba(0, 0, 0, 0.01)), url('../../../assets/img/bg/clientes.png');
+    height: 20vh;
+    max-height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}*/
+.d-flex{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height:100%;
+    margin-left: 3rem;
+    
+    cursor: pointer;
+}
+.d-flex > .efecto{
+    transition: 0.5s all ease;
+}
+.d-flex > .efecto:hover{
+    transform: translate(25px, 0px);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:764px) {
+    .bg-1,.bg-2,.bg-3,.bg-4,.bg-5{
+        background-position: center right;
+    }
+}

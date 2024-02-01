@@ -1,6 +1,10 @@
+.text-icons{
+    padding: min(2rem, 5vh);
+}
+
 .img-fluid{
-    width: 185px;
-    height: 123px;
+    width: 250px;
+    height: 166px;
     border-radius: 12px;
     object-fit: cover;
     object-position: center center;

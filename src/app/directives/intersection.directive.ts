@@ -20,7 +20,7 @@ export class IntersectionDirective implements OnInit, OnDestroy{
 
     this.observer = new IntersectionObserver((entries) => this.handleIntersection(entries), options);
     this.observer.observe(this.el.nativeElement);
-    console.log(this.el.nativeElement);
+    //console.log(this.el.nativeElement);
   }
 
   ngOnDestroy() {
@@ -33,9 +33,10 @@ export class IntersectionDirective implements OnInit, OnDestroy{
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-      } else {
+        
+      } /*else {
         entry.target.classList.remove('show');
-      }
+      }*/
     });
   }
 }

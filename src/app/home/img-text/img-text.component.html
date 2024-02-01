@@ -1,21 +1,20 @@
 <section>
-    <div class="dividoEnDos">
+    <div class="dividoEnDos text-violeta">
         <div class="row-2 flex-item">
             <div>
-                <img src="https://daweyachts.com/wp-content/uploads/Dawe-yachts-barcos-goleta-Samarkand-800x800.jpg" alt=" " title="" aria-label=""  class="img-uno transDelay-200 hidden" appIntersectionObserver [threshold]="0">
+                <img src="{{dataService.dataImagestxt[0].img2}}" alt="{{dataService.dataImagestxt[0].alt2}}"  aria-label="isla mykonos en grecia"  class="img-uno" width="276" height="480"> <!--appIntersectionObserver [threshold]="0" transDelay-400 hidden-->
             </div>
             <div>
-                <img src="https://daweyachts.com/wp-content/uploads/Ocean-Star-1-800x800.jpg" alt=" " title="" aria-label=""  class="img-uno transDelay-400 hidden" appIntersectionObserver [threshold]="0">
+                <img src="{{dataService.dataImagestxt[0].img1}}" alt="{{dataService.dataImagestxt[0].alt1}}" aria-label="disfrutar del mar adriatico"  class="img-uno" width="276" height="480" > <!--appIntersectionObserver [threshold]="0" transDelay-400 hidden-->
             </div>
         </div>
-        <div class="flex-item text-white hidden transDelay-800" appIntersectionObserver [threshold]="0">
-            <h2>
-                Viví el <span class="text-azul">Mediterráneo</span> de una forma exclusiva.
-            </h2>
-            <h3>
-                Alquilá tu embarcación: <span class="text-azul">Catamaránes, Veleros, Yates, Goletas</span>. <br/> Navegá por <span class="text-azul">Ibiza, Mallorca, Rivera Francesa, Cerdeña, Costa Amalfintana</span>.
-            </h3>
-            <button class="btn-contactanos" (click)="scrolling.onClikScroll('contacto')">
+        <div class="flex-item">
+            <h4 appIntersectionObserver [threshold]="0.5" class="hidden transDelay-400">Alquila tu catamarán, velero o yate con My Yacht Company.</h4>
+            <!--<h2 [innerHTML]="dataService.dataImagestxt[0].h2"></h2>-->
+            <h2 appIntersectionObserver [threshold]="0.5" class="hidden">Vive el Caribe de una forma exclusiva</h2>
+            <!--<h3 [innerHTML]="dataService.dataImagestxt[0].h3"></h3>-->
+            <h3 appIntersectionObserver [threshold]="0.5" class="hidden transDelay-400">¿Un destino imperdible?<br/> <b>Las Islas Vírgenes Britanicas</b>: visitá Normal Island, Peter Island, Salt Island, Cooper Island, Ginger Island, Virgin Gorda, Anegada...</h3>
+            <button appIntersectionObserver [threshold]="0.5" class="btn-contactanosb hidden transDelay-800" aria-label="Contactanos" (click)="scrolling.onClikScroll('contacto')">
                 Contactanos
             </button>
         </div>

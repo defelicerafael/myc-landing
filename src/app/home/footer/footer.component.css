@@ -1,8 +1,20 @@
 footer{
-    margin-top: 2rem;
+    margin-top: 0rem;
     background-color: whitesmoke;
+    padding: 3rem 0rem;
 }
 a{
     text-decoration: none;
     color: #1E4769;
+}
+.ms-1{
+    padding-right: .5rem;
+}
+
+@media screen and (max-width:764px) {
+    footer{
+        margin-top: 0rem;
+        background-color: whitesmoke;
+        padding: 1rem 0rem;
+    }
 }

@@ -2,6 +2,8 @@ import { Component,inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IntersectionDirective } from 'src/app/directives/intersection.directive';
 import { ScrollingService } from '../services/scrolling.service';
+import { DataBahamasService } from '../services/data-bahamas.service';
+
 
 @Component({
   selector: 'app-big-text',
@@ -12,4 +14,5 @@ import { ScrollingService } from '../services/scrolling.service';
 })
 export class BigTextComponent {
   public scrolling = inject(ScrollingService);
+  public dataService = inject(DataBahamasService);
 }

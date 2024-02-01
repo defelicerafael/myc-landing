@@ -1,0 +1,16 @@
+.mx-auto{
+    margin: 0 auto !important;
+    display: block !important;
+    width: 100% !important;
+    background-color: white;
+    /*height: auto;*/
+}
+.center{
+    text-align: center;
+}
+.centrado-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
